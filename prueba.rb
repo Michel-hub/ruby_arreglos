@@ -1,7 +1,6 @@
-a =[5, 6, 7, 8, 9]
-n = a.count
-i = 0
-while i < n
-    puts a[i]
-    i += 1 # Tenemos que recordar incrementar el indice en cada iteracion
+a = [100, 200, 1000, 5000]
+sum = 0
+3.times do |i|
+    sum += i
+    puts sum
 end
