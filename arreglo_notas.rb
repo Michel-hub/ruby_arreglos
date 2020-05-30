@@ -10,6 +10,18 @@ notas.each do |i|
         notas_array << 2
     end
 end
-print "#{notas_array}\n"
+
         
 
+def promedio(arr)
+    sum = 0
+    arr.each do |a|
+        sum += a
+    end
+    newsum = (sum/10)
+    newsum = newsum.to_f
+    puts "El promedio del arreglo es #{newsum}"
+end
+
+
+promedio(notas_array)
