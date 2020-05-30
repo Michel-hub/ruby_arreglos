@@ -5,20 +5,23 @@ notas_array = []
 notas.each do |i|
     i = i.to_i
     if i > 0
-        notas_array << i
+        notas_array.push i
     else
         notas_array << 2
     end
 end
 
+
         
 
 def promedio(arr)
     sum = 0
+    z = 10
     arr.each do |a|
         sum += a
     end
-    newsum = (sum/10)
+    puts sum
+    newsum = (sum/z)
     newsum = newsum.to_f
     puts "El promedio del arreglo es #{newsum}"
 end

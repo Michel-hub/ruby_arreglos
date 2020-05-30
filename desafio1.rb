@@ -9,7 +9,7 @@ end
 def convertir(arr)
     b = arr.map {|e| e.to_f}
     print "#{b}\n"
-    end
+end
 
 # Utilizando select descartar todos los elementos menores a 5 en el array.
 def descartar(arr)
