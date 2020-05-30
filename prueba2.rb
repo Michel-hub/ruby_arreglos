@@ -1,19 +1,9 @@
-m = [[3, 2],[1, 4]]
-
-m.each do |row|
-    row.each do |ele|
-    print "\t#{ele}"
+def modulo(array)
+    n = array.count
+    suma = 0
+    n.times do |i|
+    suma = suma + array[i]**2
     end
-    print "\n"
+    Math.sqrt(suma)
     end
-
-    def show(matrix)
-        matrix.each do |row|
-        row.each do |ele|
-        print "\t#{ele}"
-        end
-        print "\n"
-        end
-    end
-
-    show(m)
+    modulo([1,2,3])
