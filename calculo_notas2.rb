@@ -1,7 +1,14 @@
-data = open("notas.data").readlines 
-alumnos = data.map{|elemento| elemento.split(",")} 
-alumnos.each do |alumno| 
-    hola = alumno.map{|e| e.to_i}.max 
-    puts "#{alumnos[0]} #{hola}"
+def nota_mas_alta(arr)
+
+    new_arr =[]
+    new_arr << arr[0]
+    new_arr << (arr[1..arr.count].map{|nota| nota.to_i}.max)
+
+   new_arr
+
 end
- 
+
+data = open('notas.data').readlines.map{|fila| fila.split(',')}
+data.each do |alumno|
+    puts nota_mas_alta(alumno)
+ end
